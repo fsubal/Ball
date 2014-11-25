@@ -1,0 +1,55 @@
+<!--
+	以下のHTMLタグを用いて、画面の中をボールが反射移動プログラムを書け。
+	1. ボールは斜めに直線移動させること（角度や速さは自由）
+	2. ボールは壁（画面の端）にぶつかったときに反射するようにすること
+	3. ボールは何もしなくても移動し始めるようにすること
+	4. ボールを停止させる処理などは必要なし
+	5. ボールの見た目（色や大きさ）は自由にしても構わない。
+	6. setIntervalを使用する場合、animateの持続時間と同じ長さで繰り返すと処理落ちが起こるため気をつけること。
+-->
+
+<html lang="ja">
+<head>
+	<meta charset="utf-8"/>
+	<title>ボール課題</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<style>
+		html, body{
+			width: 100%;
+			min-height: 100%;
+			width: auto !important;
+			background: #eee;
+			margin: 0;
+			padding: 0;
+		}
+	
+		div#container{
+			width: 100%;
+			height: 100%;
+		}
+		
+		p#ball{
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			background: #f4a;
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p id="ball"></p>
+	</div>
+	
+	<script>
+		$(function (){
+
+		});
+	</script>
+</body>
+</html>
